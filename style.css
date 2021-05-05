@@ -39,9 +39,10 @@ section {
     height: 80vh;
 }
 .hero {
+    
     width: 100%;
     height: 60%;
-    background-color: rebeccapurple;
+    position: relative;
 }
 section img {
     width: 100%;
@@ -52,6 +53,18 @@ section h1 {
     width: 30%;
     height: 100%;
     position: relative;
-    top: -90px;
-    color: white
+    top: -100px;
+    left: 300px;
+    color: white;
+    z-index: 3;
+}
+.hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.2;
 }
